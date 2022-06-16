@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado El Tío</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/producto.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top" style="background-color: #042577;">
+        <button class="navbar-toggler navbar-toggler-light bg-white" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="inicio.html">
+            <img src="../images/logo.png" class="d-block" alt='...' height="110px" width="120px">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto">
+                <a href="empleados.html"><button type="button" style="background-color:#042577" onclick="empleados.html"
+                        class="btn text-white nav-item nav-link mr-2">Empleados</button>
+                </a>
+                <a href="deudores.html"><button type="button" style="background-color:#042577"
+                        class="btn text-white nav-item nav-link mr-2">Clientes
+                        deudores</button>
+                </a>
+                <div class="dropdown">
+                    <button class="btn text-white dropdown-toggle nav-item nav-link mr-2" type="button"
+                        style="background-color:#042577" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="producto.html">Ver Productos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="categoria.html">Gestionar Categorías</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn text-white dropdown-toggle nav-item nav-link mr-2" type="button"
+                        style="background-color:#042577" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Ventas
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="histventas.html">Ventas Realizadas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="factura.html">Registrar Venta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center mr-4">
+                <a href="micuenta.html"><img src="../images/User_Circle.png" class="align-right justify-content-center"
+                        alt='...' height="30px" width="30px"></a>
+                <a href="micuenta.html"><button type="button" style="background-color:#042577"
+                        class="btn text-white mr-2">Mi cuenta</button></a>
+            </div>
+            <div class="d-flex flex-row justify-content-center mr-4">
+                <a href="checkout.html">
+                    <span style="color:#fff; font-size: 20px;">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge badge-light">4</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <a href=""><button class="button" style="font-size: 15px;" id="bt"><img
+                            src="../images/img carnes y pescao.png" width="30px" height="30px"> Carnes</button>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href=""><button class="button" style="font-size: 15px;" id="bt"><img src="../images/harina.png"
+                            width="30px" height="30px"> Viveres</button>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href=""><button class="button" style="font-size: 15px;" id="bt"><img
+                            src="../images/img enlatados.png" width="30px" height="30px"> Enlatados</button>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <a href=""><button class="button" style="font-size: 15px;" id="bt"><img style="margin-right: 10px"
+                            src="../images/img frutas y verduras.png" width="30px" height="30px">Frutas y
+                        Verduras</button>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href=""><button class="button" style="font-size: 15px;" id="bt"><img src="../images/img aseo.png"
+                            width="30px" height="30px"> Aseo y Limpieza</button>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href=""><button class="button" style="font-size: 15px;" id="bt"><img src="../images/img bebida.png"
+                            width="30px" height="30px">Bebidas</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="text-center" style="margin-left: 100px; margin-right: 100px;">
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="card-title my-0">Arveja</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../images/supertio2.jpg" class="card-img-top" alt="...">
+                        <p class="mt-3">descripcion y datos del producto</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary">
+                            <span style="color:#fff; font-size: 20px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="ml-2">Agregar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="card-title my-0">Aceite</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../images/supertio3.jpg" class="card-img-top" alt="...">
+                        <p class="mt-3">descripcion y datos del producto</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary">
+                            <span style="color:#fff; font-size: 20px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="ml-2">Agregar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="card-title my-0">Arroz</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../images/supertio4.jpg" class="card-img-top" alt="...">
+                        <p class="mt-3">descripcion y datos del producto</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary">
+                            <span style="color:#fff; font-size: 20px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="ml-2">Agregar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="card-title my-0">Sardina</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../images/supertio5.jpg" class="card-img-top" alt="...">
+                        <p class="mt-3">descripcion y datos del producto</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary">
+                            <span style="color:#fff; font-size: 20px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="ml-2">Agregar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="card-title my-0">Harina</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../images/supertio6.jpg" class="card-img-top" alt="...">
+                        <p class="mt-3">descripcion y datos del producto</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary">
+                            <span style="color:#fff; font-size: 20px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="ml-2">Agregar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="card-title my-0">Froot Loops</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../images/supertio7.jpg" class="card-img-top" alt="...">
+                        <p class="mt-3">descripcion y datos del producto</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary">
+                            <span style="color:#fff; font-size: 20px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="ml-2">Agregar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="card-title my-0">Salsas</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../images/supertio8.jpg" class="card-img-top" alt="...">
+                        <p class="mt-3">descripcion y datos del producto</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary">
+                            <span style="color:#fff; font-size: 20px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="ml-2">Agregar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="card-title my-0">Arroz</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../images/supertio9.jpg" class="card-img-top" alt="...">
+                        <p class="mt-3">descripcion y datos del producto</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary">
+                            <span style="color:#fff; font-size: 20px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="ml-2">Agregar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ess">
+
+<head>
+  <title>Factura Supermercado el Tío</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/factura.css" />
+
+</head>
+
+<body onload="">
+  <script rel="stylesheet" type="text/javascript" src=""></script>
+
+  <body onload="">
+    <script rel="stylesheet" type="text/javascript" src=""></script>
+
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top" style="background-color: #042577;">
+      <button class="navbar-toggler navbar-toggler-light bg-white" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="index.html">
+        <img src="img/titulo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+        S.A.A.M
+      </a> -->
+      <a class="navbar-brand" href="inicio.html">
+        <img src="../images/logo.png" class="d-block" alt='...' height="110px" width="120px">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-nav mr-auto ml-auto">
+          <!-- <a class="nav-item nav-link mr-2 active" href="index.html">Quienes Somos? <span
+              class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link mr-2" href="registroMascota.html">Registrar Mascota</a>
+          <a class="nav-item nav-link mr-2" href="adoptar.html">Adoptar</a>
+          <a class="nav-item nav-link mr-2" href="#">Mascotas Perdidas</a>
+          <a class="nav-item nav-link mr-2" href="#">Cuidados</a> -->
+          <a href="empleados.html"><button type="button" style="background-color:#042577" onclick="empleados.html"
+              class="btn text-white nav-item nav-link mr-2">Empleados</button>
+          </a>
+          <a href="deudores.html"><button type="button" style="background-color:#042577"
+              class="btn text-white nav-item nav-link mr-2">Clientes
+              deudores</button>
+          </a>
+          <div class="dropdown">
+            <button class="btn text-white dropdown-toggle nav-item nav-link mr-2" type="button"
+              style="background-color:#042577" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Productos
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="producto.html">Ver Productos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="categoria.html">Gestionar Categorías</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn text-white dropdown-toggle nav-item nav-link mr-2" type="button"
+              style="background-color:#042577" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Ventas
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="histventas.html">Ventas Realizadas</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="factura.html">Registrar Venta</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+          <!-- <a href="inicio.html" class="btn btn-primary mr-2">iniciar Sesion</a>
+          <a href="#" class="btn btn-success">Registrarse</a> -->
+          <a href="micuenta.html"><button type="button" style="background-color:#042577" class="btn text-white mr-2">Mi
+              cuenta</button></a>
+          <a href="micuenta.html"><img src="../images/User_Circle.png" class="align-right justify-content-center"
+              alt='...' height="30px" width="30px"></a>
+        </div>
+      </div>
+    </nav><br>
+
+    <!-- Encabezado Menu -->
+    <!-- <div id="banner" class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 text-white text-center" style="margin-left: 25px;">
+        <a href="inicio.html"><img src="../images/logo.png" class="d-block" alt='...' height="130px" width="130px"></a>
+      </div>
+      <div id="fuente" class="col-md-5 mt-4 text-white text-right"><br>
+        <a href="empleados.html"><button type="button" style="background-color:#042577" onclick="empleados.html"
+            class="btn text-white">Empleados</button></a>
+        <a href="deudores.html"><button type="button" style="background-color:#042577" class="btn text-white">Clientes
+            deudores</button></a>
+        <a class="btn dropdown-toggle" role="button" data-toggle="dropdown" style="color:white"
+          aria-haspopup="true">Productos</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="producto.html">Ver Productos</a>
+          <a class="dropdown-item" href="categoria.html">Gestionar Categorías</a>
+        </div>
+      </div>
+      <div id="fuente" class="col-md-3 mt-4 text-white text-left"><br>
+        <a class="btn dropdown-toggle" role="button" data-toggle="dropdown" style="color:white"
+          aria-haspopup="true">Ventas</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="histventas.html">Ventas Realizadas</a>
+          <a class="dropdown-item" href="factura.html">Registrar Venta</a>
+        </div>
+        <a href="micuenta.html"><button type="button" style="background-color:#042577" class="btn text-white">Mi
+            cuenta</button></a>
+        <a href="micuenta.html"><img src="../images/User_Circle.png" class="align-right" alt='...' height="30px"
+            width="30px"></a>
+      </div>
+    </div>
+  </div><br> -->
+
+
+    <div id="contenido" class="container-fluid"><br>
+      <div class="row" id="titulo-venta">
+        <div class="col-md-12">
+          <h2 class="d-flex justify-content-sm-center">Registrar Venta</h2>
+        </div>
+      </div>
+      <div class="row" id="venta">
+        <div class="col-ms-6 input-group">
+          <Label> Venta No. </label>
+          <Label>Debe ser automatico</label>
+        </div>
+      </div>
+      <div class="row" id="cliente">
+        <div class="col-md-6 input-group">
+          <Label> Cliente: <Input type="text" id="valor_cliente" value="" /></label>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4 input-group">
+          <Label id="vendedor">Vendedor:<Label id="nombreVendedor">Automático </label></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="banner2" class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table table-striped" id="table-factura" style="width: 100%;">
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-11">
+          <a class="float-right mr-2" data-toggle="modal" href="#ventana2"><button type="button"
+              id="btnEliminarProducto" class="btn btn-danger">Eliminar Producto(s)</button></a>
+          <a class="float-right mr-2" data-toggle="modal" href="#ventana1"><button type="button"
+              id="btn-abrir-popupselectproducto" class="btn btn-primary">Nuevo Producto</button></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="total-apagar">
+          <Label id="total"> Total:</label>
+          <Label id="totalVenta">Automático</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-11">
+          <a class="float-right mr-2" data-toggle="modal" href="#"><button type="button" id="btnRegVenta"
+              class="btn btn-success">Registrar venta</button></a>
+          <a class="float-right mr-2" data-toggle="modal" href="#ventana3"><button type="button" id="btn-fiar-venta"
+              class="btn btn-primary">Fiar
+              Venta</button></a>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="modal fade" id="ventana3" style="margin-top: 10px;">
+      <div class="modal-dialog">
+        <div class="modal-content" id="ventana3-contenido">
+          <div class="modal-header">
+            <h2>Venta Fiada</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card container-fluid"><br>
+              <form action="">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label for="registroUnico" class="form-label"><strong>ID Factura:</strong></label>
+                    <label for="" class="form-control">xxxxx</label>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label id="saldo"> <strong>Fecha de Compra:</strong></label>
+                    <label id="saldo" class="form-control" aria-readonly=""> XX/XXXX/XXXX </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="cliente" id="clien" class="form-label"><strong>Cliente:</strong></label>
+                    <input type="text" id="deudor" name="cliente" value="" placeholder="Nombre del cliente"
+                      class="form-control" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="direccion" id="clien"><strong>Dirección:</strong> </strong></label>
+                    <input type="text" id="deudor" name="direccion" value="" placeholder="Dirección"
+                      class="form-control" />
+                  </div>
+                </div>
+                <div class=" row">
+                  <div class="col-md-12 form-group">
+                    <label for="telefono" id="clien" class="form-label"><strong>Teléfono:</strong></strong></label>
+                    <input type="text" id="deudor" name="telefono" value="" placeholder="telefono"
+                      class="form-control" />
+                  </div>
+                </div>
+                <button type=" button" id="btnAbono" class="btn btn-primary float-right ">Registrar Venta Fiada</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="ventana1" style="margin-top: 90px;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title justify-content-sm-center" id="exampleModalLabel">Agregar Producto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body card container-fluid">
+            <div class="row">
+              <div class="col-md-8 form-group">
+                <label for="" class="form-label"><Strong>Producto</Strong></label>
+                <select id="select" class="form-control">
+                  <option>opciones</option>
+                </select>
+              </div>
+              <div class="col-md-4 form-group">
+                <label for="message-text" class="form-label"><strong>Cantidad</strong></label>
+                <input type="text" class="form-control" id="recipient-cant" onkeypress="return solonumeros(event)">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="agregar-producto">Agregar producto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" id="ventana2" style="top:70px">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Eliminar producto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Esta seguro de eliminar estos productos</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Eliminar producto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script type="../text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/factura.js"></script>
+  </body>
+
+</html>

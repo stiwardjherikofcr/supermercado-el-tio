@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+#banner {
+	background-color: #042577;
+
+	height: 130px;
+	width: 100%;
+}
+
+#fuente {
+	font-family: "Helvetica";
+	color: #fcfcfc;
+
+}
+
+#fcontenido {
+	font-family: "Helvetica";
+	color: #000000;
+	padding: 35px;
+}
+
+#contenido {
+	border: 2px solid #32a858;
+	background-color: #a6f5c0;
+	margin: 0 auto;
+	width: 80%;
+	height: auto;
+	padding: 15px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	/* css3 */
+}
+
+
+#ole {
+	margin-left: 47%;
+
+}
+
+nav a:hover {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+nav button:hover {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#tamano {
+	border: 2px solid #32a858;
+	background-color: #defce8;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	/* css3 */
+}
+
+#err {
+	border: 2px solid #d64747;
+	background-color: #d64747;
+	margin: 0 auto;
+	width: 50%;
+	font-weight: bold;
+
+	height: auto;
+	padding: 15px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	/* css3 */
+}
+
+table {
+	background: #fcfcfc;
+	margin: 15px;
+	text-align: center;
+
+	font-size: "40";
+}
+
+table th {
+	color: #fcfcfc;
+	text-align: center;
+	background: #042577
+}
+
+
+
+table tr:nth-child(even) {
+	/* css3 */
+	color: #000;
+	background: #dddddd;
+	text-align: center;
+}
+
+table tr:nth-child(odd) {
+	/* css3 */
+	color: #000;
+	background: #042577;
+	text-align: center;
+}
+
+table tr:nth-child(odd):hover {
+	background-color: #a4c2eb;
+	text-align: center;
+}
+
+table tr:nth-child(even):hover {
+	background-color: #a4c2eb;
+	text-align: center;
+}
+
+table td:nth-child(3) {
+	text-align: center;
+}
+
+#redondo {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	align-self: 500px;
+}
+
+.button {
+	background-color: #a4c2eb;
+	border-radius: 6px;
+	border: none;
+	color: #000000;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 16px 24px;
+	text-align: center;
+	width: auto;
+}
+
+.button:hover {
+	background-color: #042577;
+	color: #fff;
+}
+
+#bt {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.card {
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+}

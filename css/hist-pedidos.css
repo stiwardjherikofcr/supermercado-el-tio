@@ -1,0 +1,12 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+table {
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+}

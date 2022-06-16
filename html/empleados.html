@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lista de Empleados - Supermercado El Tío</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+
+<body onload="">
+  <script rel="stylesheet" type="text/javascript" src=""></script>
+
+  <nav class="navbar navbar-light navbar-expand-lg sticky-top" style="background-color: #042577;">
+    <button class="navbar-toggler navbar-toggler-light bg-white" type="button" data-toggle="collapse"
+      data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <a class="navbar-brand" href="index.html">
+        <img src="img/titulo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+        S.A.A.M
+      </a> -->
+    <a class="navbar-brand" href="inicio.html">
+      <img src="../images/logo.png" class="d-block" alt='...' height="110px" width="120px">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <div class="navbar-nav mr-auto ml-auto">
+        <!-- <a class="nav-item nav-link mr-2 active" href="index.html">Quienes Somos? <span
+              class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link mr-2" href="registroMascota.html">Registrar Mascota</a>
+          <a class="nav-item nav-link mr-2" href="adoptar.html">Adoptar</a>
+          <a class="nav-item nav-link mr-2" href="#">Mascotas Perdidas</a>
+          <a class="nav-item nav-link mr-2" href="#">Cuidados</a> -->
+        <a href="empleados.html"><button type="button" style="background-color:#042577" onclick="empleados.html"
+            class="btn text-white nav-item nav-link mr-2">Empleados</button>
+        </a>
+        <a href="deudores.html"><button type="button" style="background-color:#042577"
+            class="btn text-white nav-item nav-link mr-2">Clientes
+            deudores</button>
+        </a>
+        <div class="dropdown">
+          <button class="btn text-white dropdown-toggle nav-item nav-link mr-2" type="button"
+            style="background-color:#042577" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Productos
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="producto.html">Ver Productos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="categoria.html">Gestionar Categorías</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn text-white dropdown-toggle nav-item nav-link mr-2" type="button"
+            style="background-color:#042577" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Ventas
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="histventas.html">Ventas Realizadas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="factura.html">Registrar Venta</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-center">
+        <!-- <a href="inicio.html" class="btn btn-primary mr-2">iniciar Sesion</a>
+          <a href="#" class="btn btn-success">Registrarse</a> -->
+        <a href="micuenta.html"><button type="button" style="background-color:#042577" class="btn text-white mr-2">Mi
+            cuenta</button></a>
+        <a href="micuenta.html"><img src="../images/User_Circle.png" class="align-right justify-content-center"
+            alt='...' height="30px" width="30px"></a>
+      </div>
+    </div>
+  </nav><br>
+
+  <!-- <div  id="banner" class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 text-white text-center">
+			<a href="inicio.html"><img src="../images/logo.png" class="d-block" alt='...' height="130px" width="130px"></a></div>
+			<div id="fuente" class="col-md-5 mt-4 text-white text-right"><br>				
+				<a href="empleados.html"><button type="button" style="background-color:#042577" onclick ="empleados.html" class="btn text-white">Empleados</button></a>
+				<a href="deudores.html"><button type="button" style="background-color:#042577" class="btn text-white">Clientes deudores</button></a>
+				<a class="btn dropdown-toggle" role="button" data-toggle="dropdown" style="color:white" aria-haspopup="true">Productos</a>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <a class="dropdown-item" href="producto.html">Ver Productos</a>
+					    <a class="dropdown-item" href="categoria.html">Gestionar Categorías</a></div>
+			</div>
+			<div id="fuente" class="col-md-3 mt-4 text-white text-left"><br>
+				<a class="btn dropdown-toggle" role="button" data-toggle="dropdown" style="color:white" aria-haspopup="true">Ventas</a>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <a class="dropdown-item" href="histventas.html">Ventas Realizadas</a>
+					    <a class="dropdown-item" href="factura.html">Registrar Venta</a></div>
+					  <a href="micuenta.html"><button type="button" style="background-color:#042577" class="btn text-white">Mi cuenta</button></a>
+				<a href="micuenta.html"><img src="../images/User_Circle.png" class="align-right" alt='...' height="30px" width="30px"></a>
+			</div>				
+	</div>
+</div><br> -->
+
+  <div id="fcontenido">
+    <h1 style="font-size:50px">Lista de Empleados</h1>
+    <div class="input-group mb-3">
+      <input type="search" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button type="button" style="background-color:#042577; font-size: 16px" class="btn text-white">Buscar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row ml-5 mr-5">
+    <table class="table table-striped text-center" style="font-size:22px">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Usuario</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Direccion</th>
+          <th scope="col">Cargo</th>
+          <th scope="col"><img width="40px" height="40px" style="text-align:center;" src="../images/herramientas.png">
+          </th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <td>nx</td>
+          <td>ux</td>
+          <td>tx</td>
+          <td>dx</td>
+          <td>cx</td>
+          <td>
+            <div class="dropdown show">
+              <a class="btn dropdown-toggle" src="images/puntos.png" href="#" role="button" id="desplegable"
+                data-toggle="dropdown" aria-haspopup="true">
+                <img src="../images/puntos.png" class="align-right" height="30px" width="30px">
+              </a>
+
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" data-toggle="modal" style="background-color:#FFFFFF"
+                  href="#ventana1">Eliminar</a>
+                <a class="dropdown-item" data-toggle="modal" style="background-color:#FFFFFF" id="btn-abrir-popup2"
+                  href="#ventana2">Editar información</a>
+                <a class="dropdown-item" data-toggle="modal" style="background-color:#FFFFFF" id="btn-abrir-popup3"
+                  href="#ventana3">Restablecer contraseña</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="col-md-11 text-right">
+      <a class="btn text-white" id="redondo" data-toggle="modal" style="background-color:#042577" href="#ventana4">
+        <h3>+</h3>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="ventana1" style="top:250px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="model-header">
+          <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true"
+            style="margin-right: 10px">&times;</button>
+          <h6 class="modal-title" style="text-align: center">¿Seguro quiere eliminar este empleado?</h6>
+        </div>
+        <div class="modal-footer">
+          <button type="button" style="background-color:#042577" class="btn text-white"
+            data-dismiss="modal">Cancelar</button>
+          <button type="button" onclick="eliminar()" id="Empleado eliminado"
+            style="background-color:#042577; font-size:16px; width:40%" class="btn text-white">Eliminar
+            Empleado</button>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ventana2" style="top:70px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar Información</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Teléfono</label>
+              <input type="text" class="form-control" id="recipient-telf">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Dirección</label>
+              <input type="text" class="form-control" id="recipient-dir">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Cargo</label><br>
+              <select style="width:100%" class="form-select" aria-label="Default select example">
+                <option selected>Cargo</option>
+                <option value="1">Cargo 1</option>
+                <option value="2">Cargo 2</option>
+                <option value="3">Cargo 3</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ventana3" style="top:150px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cambiar contraseña</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Ingrese contraseña de Administrador</label>
+              <input type="password" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Nueva contraseña</label>
+              <input type="password" class="form-control" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ventana4" style="top:40px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="model-header">
+          <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true"
+            style="margin-right: 10px">&times;</button><br>
+        </div>
+        <div id="addEmpleado">
+          <h1 align="center">Añadir Empleado</h1><br>
+          <div class="card-body">
+            <form id="formulario">
+              <div class="form-group">
+                <input type="text" id="nombreE" class="form control" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <input type="text" id="usuarioE" class="form control" placeholder="Usuario">
+              </div>
+              <div class="form-group">
+                <input type="number" id="telefonoE" class="form control" placeholder="Teléfono">
+              </div>
+              <div class="form-group">
+                <input type="text" id="direccionE" class="form control" placeholder="Direccion">
+              </div>
+              <div class="form-group">
+                <input type="text" id="cargoE" class="form control" placeholder="Cargo">
+              </div>
+              <button type="submit" class="btn btn-primary">Agregar Empleado</button>
+            </form>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  <script type="text/javascript" src="../js/empleados.js"></script>
+
+</body>
+
+</html>
