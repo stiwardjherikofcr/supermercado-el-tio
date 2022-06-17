@@ -2,11 +2,11 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
-a {
-  outline: none;
-  text-decoration: none;
+table {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-table {
-	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+#cart td {
+  vertical-align: middle;
 }
